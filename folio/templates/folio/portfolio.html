@@ -1,0 +1,39 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+    
+    
+    <div class="container">
+        
+        <h1 class="form__title">Portfolio</h1>
+
+        
+        <div class="gridf">
+            {% for n in datos %}
+            
+            {% if n.imagen %}
+            <a href="#" class="content">
+                <img src="{{n.imagen.url}}" alt="imagen-presentation" class="categoryf__img">
+            {% endif %}
+
+                <div class="text">
+
+                    <h3 class="categoryf__text">{{n.nombre}}</h3> 
+                    <p class="categoryf__text">{{n.descripcion}}</p> 
+                    <p class="categoryf__text">{{n.fecha}}</p>
+
+                </div>
+
+            </a>
+            {% endfor %}
+            
+        </div>
+
+    </div> 
+
+
+    {% endblock %}

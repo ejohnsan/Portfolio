@@ -1,0 +1,28 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <main>
+
+        <div class="container">
+
+            <div class="about">
+                <h1 class="about__title">Que la falta de conocimiento no nuble tu creatividad.</h1>
+            </div>
+
+            <div class="about__grid">
+                <p class="about__paragraph">
+                    Mi nombre es Elton John Sandoval Perez y actualmente vivo en Medellin-Colombia, soy diseñador grafico empirico y estoy estudiando dia a dia para alcanzar mi meta de
+                    ser desarrollador front-end.<br><br> He participado en el rubro de la publicidad por los ultimos 10 años y es alli donde me he formado. La publicidad y la empresa de la que he hecho parte me han brindado los conocimientos para aprender  y seguir creciendo personalmente.<br><br>
+                    Mi objetivo es lograr unir todos estos conocimientos de publicidad y  desarrollo web para ofrecer a todos mis clientes un portafolio amplio con mucha veracidad y experiencia, logrando impactar en areas adicionales para  marcar la diferencia y reconocimiento.<br><br>
+                    Mi vida personal es fundamental porque aparte de contar con una muy buena creatividad, Dios me brindo la oportunidad de escoger a una mujer que me supera en todo y es por ello que mi matrimonio es la clave de mis grandes logros.<br><br>
+
+                    Nos vemos en tú proximo proyecto.
+                </p>
+                <img src="{% static 'home/assets/img/esposa.jpg' %}" alt="" class="about__img">
+            </div>
+        </div>
+    </main>
+
+    {% endblock %}

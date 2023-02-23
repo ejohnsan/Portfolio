@@ -1,0 +1,39 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <main>
+
+        <div class="container">
+
+            <div class="title">
+                <h1 class="form__title">Contactame</h1>
+            </div>
+
+            <!-- {%  if "valido" in request.GET %}
+
+                <p class="aviso" style="color: azure;">ENVIO EXITOSO</p>
+
+            {% endif %} -->
+
+            <form action="contacto" method="POST" class="form">{% csrf_token %}
+                <input type="text" name="asunto" placeholder="asunto" required class="form__text">
+                <input type="email" name="email" placeholder="Introduce Tú Email" required class="form__text">
+                <textarea name="contenido" class="form__comment" cols="30" rows="10" placeholder="deja tú comentario" required></textarea>
+                <a href="#" type="submit" class="btn">
+                    <span class="l1"></span>
+                    <span class="l2"></span>
+                    <span class="l3"></span>
+                    <span class="l4"></span>
+                    <!-- Enviar -->
+                    <input type="submit" onclick="message()" value="Enviar" class="btn btn--submit">
+                </a>
+            </form>     
+        </div>
+
+    </main>
+    <!-- <p style="color: azure;">{{request.POST}}</p> parametro para mostrar datos guardados -->
+    
+    {% endblock %}

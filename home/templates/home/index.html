@@ -1,0 +1,107 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- main-Contenido -->
+
+    <div class="container">
+
+        <div class="presentation">
+            <h1 class="presentation__title">Hola! Soy Elton Sandoval Peréz diseñador gráfico & front-end junior.</h1>
+            <img src="{% static 'home/assets/img/porta.jpg' %}" class="presentation__img" alt="retrato">
+        </div>
+
+    </div>
+
+    <main>
+
+        <section class="container">
+            <div class="portafolio">
+                <h2 class="portafolio__subtitle">Portfolio</h2>
+            </div>
+
+            <div class="grid">
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/4.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">MOCKUPS FIGMA</h3>
+                    </div>
+                </article>
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/2.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">DISEÑOS PUBLICITARIOS</h3>
+                    </div>
+                </article>
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/3.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">TEXTOS VOLUMETRICOS</h3>
+                    </div>
+                </article>
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/5.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">DISEÑO WEB</h3>
+                    </div>
+                </article>
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/6.1.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">PYTHON - DJANGO</h3>
+                    </div>
+                </article>
+
+                <article class="category">
+                    <img src="{% static 'home/assets/img/7.jpg' %}" class="category__img" alt="img">
+                    <div class="hover">
+                        <h3 class="hover__text">DISEÑO GRÁFICO</h3>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn1">
+
+                <a href="{% url 'portfolio' %}" class="object__btn">
+                    <span class="b1"></span>
+                    <span class="b2"></span>
+                    <span class="b3"></span>
+                    <span class="b4"></span>
+                    Ver más
+                </a>
+
+            </div>
+        </section>
+
+        <section class="container" id="about">
+
+            <div class="paragraph">
+                <h2 class="paragraph_subtitle">Sobre mi</h2>
+            </div>
+            <p class="paragraph__text">Mi nombre es Elton John Sandoval Perez y actualmente vivo en Medellin-Colombia,
+                soy diseñador grafico empirico y estoy estudiando dia a dia para alcanzar mi meta de
+                ser desarrollador front-end.<br><br> He participado en el rubro de la publicidad por los ultimos 10 años
+                y es alli donde me he formado. La publicidad y la empresa de la que he hecho parte me han brindado los
+                conocimientos para aprender y seguir creciendo personalmente.<br><br></p>
+
+                <div class="btn1">
+                    
+                    <a href="{% url 'about' %}" class="object__btn">
+                        <span class="b1"></span>
+                        <span class="b2"></span>
+                        <span class="b3"></span>
+                        <span class="b4"></span>
+                        Leer más
+                    </a>
+
+                </div>
+
+        </section>
+    </main>
+    {% endblock %}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+        <title>Elton J Sandoval P | Freelancer</title>
+        <link rel="stylesheet" href="{% static 'home/css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+        <link rel="shortcut icon" href="{% static 'home/assets/img/faviicon.png' %}" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/c569372470.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <script src="{% static 'home/py/message.py' %}"></script> -->
+    </head> 
+    
+<!-- <py-script >
+def message():
+    print("ENVIO EXITOSO")
+</py-script> -->
+
+<body>
+
+<!-- contenedor particles -->
+    <div id="particles-js"></div>
+
+<!-- menu-nav -->
+
+    <nav class="nav">
+        
+        <a href="{% url 'home' %}">
+            <img src="{% static 'home/assets/img/logo.svg' %}" class="img" alt="LogoMarca">
+        </a>
+
+        <label for="menu" class="nav__label">
+            <img src="{% static 'home/assets/img/menu.svg' %}" class="nav__icon" alt="icon-menu">
+        </label>
+
+        <input type="checkbox" id="menu" class="nav__input">
+
+        <div class="nav__items">
+            <a href="{% url 'portfolio' %}" class="nav__item">
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+                <span class="s4"></span>
+                Portfolio
+            </a>
+            <a href="{% url 'about' %}" class="nav__item">
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+                <span class="s4"></span>
+                Sobre mi
+            </a>
+            <a href="{% url 'contacto' %}" class="nav__item">
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+                <span class="s4"></span>
+                Contacto
+            </a>
+        </div>
+    </nav>
+
+{% block content %}
+
+<!-- main-contenido cambiante -->
+
+{% endblock %}
+<!-- footer-pie de pagina -->
+        <footer class="container">
+
+            <div class="footer">
+                <a href="https://www.linkedin.com/in/john-sandoval-9b7ab4227/" target="_blank" class="footer__icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ejohnsan" target="_blank" class="footer__icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </footer>
+
+    <!-- particles -->
+
+    <script src="{% static 'home/js/particles.min.js' %}"></script>
+    <script src="{% static 'home/js/app.js' %}"></script>
+
+
+
+
+
+</body>
+
+</html>
