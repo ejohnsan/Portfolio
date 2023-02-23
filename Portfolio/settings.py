@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'folio',
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://web-production-cb23.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://portfolio-ejohnsan.up.railway.app"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
