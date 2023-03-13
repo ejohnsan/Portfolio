@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.core.mail import send_mail
 from django.conf import settings
-from django.contrib import messages
+# from django.contrib import messages
 
 # from models import ContactoModel
 
@@ -20,7 +20,7 @@ def contacto(request):
         recipient_list=["johnsandoval69@gmail.com"]
 
         send_mail(subject,message,email_from,recipient_list)
-        messages.success(request, "Mensaje Enviado")
+        # messages.success(request, "Mensaje Enviado")
     
     return render(request, "contacto/form.html")
 
